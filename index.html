@@ -4,7 +4,11 @@ layout: default
 <div class="container main">
   <div class="row">
     <header>
-      <div><center><h1>{{ site.title }}</h1></center></div>
+      <div>
+          <center><h1>{{ site.title }}</h1></center>
+          <center><h2>{{ site.subtitle }}</h2></center>
+        </div>
+        
       <center>
         <span class="big-ornament">
           <svg viewBox="310 350 400 350">
@@ -48,7 +52,37 @@ layout: default
   </div>
   <div class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-8 offset-md-1">
+      <p class="description"><i>A conference organized by the Institute for the Study of the Ancient World and the Shelby White-Leon Levy Program in Archaeological Publication, in partnership with the Archaeological Institute of America</i></p>
+      <div class="info">
+          <p>Institute for the Study of the Ancient World<br/>
+              15 E. 84th Street<br/>
+              New York, NY<br/>
+          Friday, October 20, 2017</p>
+      </div>
+<h3>Speakers</h3>
+<ul id="speakers">   
+<li><b>Erin Averett</b> (Creighton, AIA), <i>Visualizing Votive Practice: The Athienou Archaeological Project’s Experiments with Digital 3D Publication</i></li>
+
+<li><b>Emily Cole</b> (ISAW) and <b>Bethany Simpson</b> (UCLA), <i>Digitizing Digs: Combining 20th and 21st Century Excavation Archives from the Fayum, Egypt</i></li>
+
+<li><b>Tom Elliott</b> (ISAW), <i>Credit and Blame in Digital Publication: Some Naive Questions and Opinionated Answers</i></li>
+
+<li><b>Sebastian Heath</b> (ISAW), <i>Digital Publication as Context: An Archaeologist’s Perspective</i></li>
+
+<li><b>Theresa Huntsman</b> (Harvard)</b>, <i>Lydian Legacies: Approaches to Digital Publication and Open Access for Sixty Years of Archaeological Data from Sardis</i></li>
+
+<li><b>Eric Kansa</b> (Open Context, W-L), <i>Data Publishing: Editorial and Curation Needs in Archaeology</i></li>
+
+<li><b>Christopher Ratté</b> (Michigan), Title to come.</li>
+
+</ul>
+
+<p>Speaker presentations will be followed by a panel discussion.</p>
+      
+      
+      
+<!---
+      <div class="col-md-8 offset-md-1">
       {% assign categories = site.categories | sort %}
       {% for category in categories %}
       <h3>On {{ category | first }}</h3>
@@ -57,5 +91,6 @@ layout: default
         {% endfor %} {% endfor %}  </p>
       {% endfor %}
     </div>
+--->
   </div>
 </div>
