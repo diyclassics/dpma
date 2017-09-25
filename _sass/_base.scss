@@ -253,3 +253,16 @@ table {
 .sponsors a img {
     margin: 25px 10px;
 }
+
+ul {
+    padding-left: 25px; 
+}
+
+li {
+    list-style: none;
+    line-height: normal;
+}
+
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
