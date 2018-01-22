@@ -1,4 +1,4 @@
-Landing page for Digital Publication in Mediterranean Archaeology conference at ISAW on October 20, 2017.
+Landing page for Future Philologies conference at ISAW on April 20, 2018.
 
 Site at diyclassics.github.io/dpma
 - Created with Jekyll with Papyrus theme
