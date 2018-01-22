@@ -239,10 +239,15 @@ table {
     text-align: justify;
 }
 
-.info {
+.info,  {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+}
+
+.about {
+    text-align: justify;
+    margin-bottom: 25px;
 }
 
 .sponsors {
