@@ -44,8 +44,18 @@ layout: default
 
         <li>12:45 Lunch</li></br>
 
-        <li><b>Ancient World Text and Digital Methods</b> (Moderator: Sebastian Heath, ISAW)</br>1:45 <a href="https://scholar.harvard.edu/sturgeon/home" target="_blank">Donald Sturgeon</a> (Harvard), "Accessible Digital Text Analysis for Classical Chinese"</li>
-        <li>2:30 <a href="http://epageperron.info/" target="_blank">Émilie Pagé-Perron</a> (Toronto/<a href="https://cdli-gh.github.io/mtaac/" target="_blank">MTAAC</a>), "Machine Translation for the Sumerian language: Workflow and Pre-Requisites"</li></br>
+        <li><b>Ancient World Text and Digital Methods</b> (Moderator: Sebastian Heath, ISAW)</br>1:45 <a href="https://scholar.harvard.edu/sturgeon/home" target="_blank">Donald Sturgeon</a> (Harvard), "Accessible Digital Text Analysis for Classical Chinese"
+        <span id='click-sturgeon' class='click-abstract'>[abstract]</span></br>
+        <p id='abstract-sturgeon' class='hidden'>Despite a growing interest in digital humanities as a field of study and focus of specialization, significant barriers to the adoption of digital techniques remain within research and teaching in practice in many humanities disciplines. While an increasing number of humanities scholars have demonstrated willingness to invest time and effort in cultivating necessary technical skills, in practice many more are prevented from experimenting with digital methods due to perceived high barriers to entry. One approach to accelerate the adoption of digital techniques is to attempt to reduce the prerequisite technical skills required to apply techniques to research data in practice through the creation of platforms and tools able to bridge technical gaps for some of the most powerful and generally applicable use cases.</br></br>
+        With this goal in mind, this talk introduces a suite of browser-based text analysis tools designed for pre-modern Chinese materials and intended to easily integrate into scholarly workflows, including in particular those common in Chinese literature, philosophy, and history departments. Major goals include accessibility of the tools themselves, as well as transparency of their working and ability to introspect the mechanisms underwriting the results and visualizations produced. By enabling rapid exploration of arbitrarily chosen textual materials while also providing insight into the algorithms used, these tools have pedagogical applications in addition to research uses, and are already in use teaching at several institutions.
+        </p>
+        </li>
+        <li>2:30 <a href="http://epageperron.info/" target="_blank">Émilie Pagé-Perron</a> (Toronto/<a href="https://cdli-gh.github.io/mtaac/" target="_blank">MTAAC</a>), "Machine Translation for the Sumerian language: Workflow and Pre-Requisites" 
+        <span id='click-perron' class='click-abstract'>[abstract]</span></br>
+        <p id='abstract-perron' class='hidden'>This paper discusses a workflow for the automated translation of the 69,000 Ur III period (~2100-2000 BC) corpus of administrative texts from Southern Mesopotamia (ancient Iraq), written in the Sumerian language. The morphological complexity of Sumerian leads to data sparsity which makes it difficult to employ off-the-shelf tools for machine translation directly. To remedy this problem we perform a morphological analysis (lemmatization, morphological parsing), part manually and part automatically, in order to increase the rate of repetition in the data. It is then possible to apply both statistical and neural algorithms for machine translation.</br></br>
+        This paper focuses on the specific challenges brought by the idiosyncrasies of the language and how we address those in our translation workflow, which can be divided in three sections: pre-requirements (eg. lemmatization), the analysis (eg. annotation) and the machine translation proper. We discuss the algorithms, techniques and tools we use, including annotations projection based on annotated English translations, word embeddings used for neural machine translation, as well as word- and phrase-based statistical machine translation. In addition, we perform syntactic annotation in line with the Universal Dependencies, which map grammatical features across languages with the future goal to integrate this information in the translation workflow.</br></br>  
+        This workflow is part of our work under the the Machine Translation and Automated Analysis of Cuneiform Languages project, a collaboration of the University of Frankfurt, University of Toronto and the University of California, Los Angeles, and funded through the Digging into Data challenge 2016 by the DFG, SSHRC, and NEH.</p>
+        </li></br>
 
         <li>3:15 Coffee</li></br>
 
@@ -76,3 +86,13 @@ layout: default
 </div>
 </div>
 
+<script>
+$(document).ready(function(){
+    $("#click-sturgeon").click(function(){
+        $("#abstract-sturgeon").toggle();
+    });
+    $("#click-perron").click(function(){
+        $("#abstract-perron").toggle();
+    });    
+});
+</script>

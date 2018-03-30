@@ -271,3 +271,11 @@ li {
 li:not(:last-child) {
     margin-bottom: 5px;
 }
+
+.hidden{
+       display:none;
+    }
+
+.click-abstract{
+    color: $alt-color;
+}
