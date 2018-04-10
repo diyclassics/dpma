@@ -61,7 +61,10 @@ layout: default
 
 <li><b>Ancient World Text: Responses from Computer Science</b></br>3:45 <a href="http://kyle-p-johnson.com/" target="_blank">Kyle P. Johnson</a> (Accenture), on historical text and natural language processing, "The Next 700 Classical Languages"</li>
         <li>4:15 <a href="https://mimno.infosci.cornell.edu/" target="_blank">David Mimno</a> and <a href="http://www.cs.cornell.edu/~laurejt/" target="_blank">Laure Thompson</a> (Cornell) on historical text and information retrieval, "Authorship and Translation: Bilingual Modeling of the <i>Patrologia Graeca</i>"</li>
-        <li>4:45 <a href="https://www.ccis.northeastern.edu/people/david-smith/" target="_blank">David Smith</a> (Northeastern) on historical text and machine learning, "Viral Texts and Networked Authors: Computational Models of Information Propagation"</li>
+        <li>4:45 <a href="https://www.ccis.northeastern.edu/people/david-smith/" target="_blank">David Smith</a> (Northeastern) on historical text and machine learning, "Viral Texts and Networked Authors: Computational Models of Information Propagation" <span id='click-smith' class='click-abstract'>[abstract]</span></br>
+        <p id='abstract-smith' class='hidden'>The era of mass digitization seems to provide a mountain of source material for digital scholarship, but its foundations are constantly shifting. Selective archiving and digitization obscures data provenance, metadata fails to capture the presence of texts of mutable genres and uncertain authorship embedded within the archive, and automatic optical character recognition (OCR) transcripts contain word error rates above 30% for even eighteenth-century English. Beyond these issues, even the identity of any given transcription might change due to improved image processing or upgraded OCR. The condition of the mass-digitized text is thus closer to the manuscript sources of an edition than to a scholarly publication.</br></br>
+        In this talk, I will discuss several aspects of our work on "speculative bibliography" in the Viral Texts and Ocean Exchanges Projects (http://viraltexts.org) as applied to multi-authored, generically hybrid nineteenth-century newspapers specifically and to mass-digitized collections generally. After summarizing the low-level text-reuse techniques used to organize the data, I discuss methods for exploiting the redundancy and cluster structure in these archives to improve OCR accuracy using multi-input attention models and unsupervised learning. I then discuss methods for inferring network structure and mapping information propagation among texts and publications.</p>
+        </li>
 </ul>
 
 <p>Speaker presentations will be followed by a panel discussion.</p>
@@ -93,6 +96,9 @@ $(document).ready(function(){
     });
     $("#click-perron").click(function(){
         $("#abstract-perron").toggle();
-    });    
+    });
+    $("#click-smith").click(function(){
+        $("#abstract-smith").toggle();
+    });  
 });
 </script>
